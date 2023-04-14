@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pig Game</title>
+</head>
+
+<body>
+
+  <div class="container-paragraph">
+    <div class="container-description">
+      <p class="paragraph-description">El juego de <strong>Pig</strong> es un juego de dados de riesgo muy simple en el
+        que
+        dos
+        jugadores compiten para
+        llegar a 100 puntos. En cada turno, un jugador tira un dado repetidamente hasta que sale un 1 o el jugador
+        mantiene su
+        puntaje y anota la suma de las tiradas (es decir, el total del turno). En cualquier momento durante el turno de
+        un
+        jugador, el jugador se enfrenta a dos decisiones:</p>
+    </div>
+    <div class="container-intruccions">
+
+      <p class="paragraph-intruccions-title">Intrucciones: </p>
+      <ul class="paragraph-intruccions">
+        <li>
+          <p> <span class="text-bold">Lanzar:</span> Si el jugador lanza y saca lo siguiente:</p>
+        <li><span class="text-bold">1 :</span> El jugador no anota nada y pasa a ser el turno del
+          oponente.</li>
+        <li><span class="text-bold">2 - 6 :</span> el número se suma al total del turno del jugador y el turno del
+          jugador continúa.</li>
+
+        </li>
+        <li>
+          <span class="text-bold">Mantener:</span> el total del turno se suma a la puntuación del jugador y se convierte
+          en el turno del
+          oponente
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <main>
+    <section class="player player--0 player--active">
+      <h2 class="name" id="name--0">Jugador 1</h2>
+      <p class="score" id="score--0">43</p>
+      <div class="current">
+        <p class="current-label">Puntos</p>
+        <p class="current-score" id="current--0">0</p>
+      </div>
+    </section>
+    <section class="player player--1">
+      <h2 class="name" id="name--1">Jugador 2</h2>
+      <p class="score" id="score--1">24</p>
+      <div class="current">
+        <p class="current-label">Puntos</p>
+        <p class="current-score" id="current--1">0</p>
+      </div>
+    </section>
+
+    <img src="/public/img/dice-5.png" alt="Jugando a los dados" class="dice" />
+    <button class="btn btn--new">🔄 Nuevo Juego</button>
+    <button class="btn btn--roll">🎲 Lanzar</button>
+    <button class="btn btn--hold">📥 Pasar Turno</button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
